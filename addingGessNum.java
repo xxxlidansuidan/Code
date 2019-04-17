@@ -11,7 +11,7 @@ class Code {
 			}
 		System.out.println("What is : " + num1 + " - " + num2 + " ?");
 		int num = sc.nextInt();
-		System.out.println("your Answer is " + ((num1 + num2 == num) ? "Right" : "Wrong-try again"));
+		System.out.println("your Answer is " + ((num1 - num2 == num) ? "Right" : "Wrong-try again"));
 		while (num1 - num2 != num) {
 		System.out.print("See Answer/paly again? [Y/n] :");
 		char ch = sc.next().charAt(0);
