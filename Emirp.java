@@ -6,7 +6,11 @@ whose reversal is also a prime. For example, 17 is a prime and 71 is a prime, so
 149 157 167 179 199 311 337 347 359 389*/
 
 class Code {
-        public static void main(String... args) {
+        public static void main(String[] args) {
+		System.out.println("The first 50 prime numbers are \n");
+		printPrimeNumbers(50);
+        }
+        public static void printPrimeNumbers(int numberOfPrimes) {
                 final int NUMBER_OF_PALENDROMIC_PRIME = 120;
                 final int NUMBER_PER_LINE = 10; 
                 int count = 0;
