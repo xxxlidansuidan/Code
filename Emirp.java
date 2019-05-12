@@ -19,18 +19,18 @@ class Code {
                         n++;
                 }
         }
+        public static boolean isEmp(int num) {
+                /**here is an Important topic: therefore It have to be
+                 * true for Both And false for one in Same Time*/
+                return isPrime(num) && !isPalindrome(num) && isPrime(reverse(num));
+        }   
         public static boolean isPrime(int num) {
                 for (int i = 2; i <= num / 2; i++) {
                         if (num % i == 0)
                                 return false;
                 }
                 return true;
-        }
-        public static boolean isEmp(int num) {
-                /**here is an Important topic: therefore It have to be
-                 * true for Both And false for one in Same Time*/
-                return isPrime(num) && !isPalindrome(num) && isPrime(reverse(num));
-        }   
+        }        
         public static boolean isPalindrome(int number) {
                 return number == reverse(number) ? true : false;
         }   
