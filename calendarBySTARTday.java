@@ -49,6 +49,6 @@ class Code {
                     }
                     System.out.println();
                     days = (days + lastDay) % 7;
-        }
-    }
+        	}
+    	}
 }
