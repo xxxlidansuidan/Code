@@ -21,6 +21,6 @@ class Code {
                 for (int i = 0; i < lol; i++)
                         System.out.print(s1.charAt(i));
                 else
-                        System.out.println("No Match");
+                        System.out.println("No Prifix Word Match");
         }
 }
