@@ -18,8 +18,7 @@ class QuickSort {
 			return;
  
 		// pick the pivot
-		int middle = low + (high - low) / 2;
-		int pivot = arr[middle];
+		int pivot = arr[low+(high-low)/2];
  
 		// make left < pivot and right > pivot
 		int i = low, j = high;
