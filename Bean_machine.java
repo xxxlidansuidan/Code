@@ -84,10 +84,10 @@ class Exercise_07_21 {
 			System.out.println();
 			for (int i = 0; i < list.length; i++) {
 				if (list[i] >= max) {
-					System.out.print("O");
+					System.out.print(" O");
 				}
 				else
-					System.out.print(" ");
+					System.out.print("  ");
 			}
 			max--;
 		}
