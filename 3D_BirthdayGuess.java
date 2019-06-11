@@ -1,3 +1,9 @@
+/**
+Listing 4.3, GuessBirthday.java, gives a program that guesses a birthday. The program can be
+simplified by storing the numbers in five sets in a three-dimensional array and it prompts the
+user for the answers using a loop, as given in Listing 8.6. The sample run of the program can
+be the same as given in Listing 4.3.
+**/
 import java.util.Scanner;
 class Code {
         public static void main(String[] args) {
