@@ -1,7 +1,12 @@
-?**Suppose a meteorology station records the temperature and humidity every hour of every day,
+/**Suppose a meteorology station records the temperature and humidity every hour of every day,
 and stores the data for the past 10 days in a text file named Weather.txt (see liveexample
 .pearsoncmg.com/data/Weather.txt). Each line of the file consists of four numbers that indi-
-cate the day, hour, temperature, and humidity.**/
+cate the day, hour, temperature, and humidity.
+
+You can use the following command to run the program:
+java Weather < Weather.txt
+
+**/
 
 import java.util.Scanner;
 public class Weather {
