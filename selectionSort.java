@@ -48,4 +48,18 @@ public class Exercise_07_20 {
 			}
 		}
 	}
+	public static void selectionSort(int[] m) {
+		for (int i = 0; i < m.length - 1; i++) {
+			int minIndex = i;
+			for (int j = i + 1; j < m.length; j++) {
+				if (m[minIndex] > m[j])
+					minIndex = j;
+			}
+			if (minIndex != i) {
+				int temp = m[i];
+				m[i] = m[minIndex];
+				m[minIndex] = temp;
+			}
+		}
+	}
 }
