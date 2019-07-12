@@ -50,3 +50,17 @@ public class Exercise_07_18 {
 		} while (swapped); // Repeat if a value was swapped
 	}
 }
+/**
+public static void bubbleSort(double[] list) {
+		for (int i = 0; i < list.length; i++) {
+			for (int j = 0; j < list.length - i - 1; j++) {
+				// If a neighboring pair is not in order, swap values
+				if (list[j] > list[j + 1]) {
+					double temp = list[j];
+					list[j] = list[j + 1];
+					list[j + 1] = temp;
+				}
+			}
+		}
+	}
+**/
