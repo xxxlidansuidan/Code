@@ -1,3 +1,19 @@
+/*********************************************************************************
+* (Explore matrix) Write a program that prompts the user to enter the length of  *
+* a square matrix, randomly fills in 0s and 1s into the matrix, prints the       *
+* matrix, and finds the rows, columns, and diagonals with all 0s or 1s.  
+* Exercise_08_14: input-output sample :
+Enter the size for the matrix: 4
+0111
+0000
+0100
+1111
+All 0s on row 2
+All 1s on row 4
+No same numbers on a column
+No same numbers on the major diagonal
+No same numbers on the sub−diagonal
+*********************************************************************************/
 import java.util.Scanner;
 class Code {
 	public static void main(String[] args) {
