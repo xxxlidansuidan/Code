@@ -11,11 +11,10 @@ class PrimeNumber {
       
     // Repeatedly find prime numbers
     while (count < NUMBER_OF_PRIMES) {
-    // Assume the number is prime
-    boolean isPrime = true; // Is the current number prime?
+    boolean isPrime = true;
     // Test whether number is prime
     for (int divisor = 2; divisor <= number / 2 && isPrime; divisor++) {
-    if (number % divisor == 0) isPrime = false; 
+        if (number % divisor == 0) isPrime = false; 
     }
     // Display the prime number and increase the count
     if (isPrime) {
@@ -26,5 +25,5 @@ class PrimeNumber {
     // Check if the next number is prime
     number++;
     }
-}
+  }
 }
