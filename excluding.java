@@ -14,16 +14,15 @@ public class Exercise_07_13 {
     public static int getRandom(int... numbers) {
         int randomInt;
         boolean inUserValues;
-        do
-        {
-            inUserValues = false;
-            randomInt = (int)(Math.random() * 54 + 1);
-            for (int i : numbers) {
-                if (i == randomInt) {
-                    inUserValues = true;
-                }
-            }            
-        } while (inUserValues);
+        do {
+            inUserValues = true;
+            
+            randomInt = (int)(Math.random() * 55);
+            
+            for (int i = 0; i < numbers.length && inUserValues; i++)             	
+                if (numbers[i] == randomInt) inUserValues = false;    
+            
+        } while (!(inUserValues));
 
         return randomInt;
     }
