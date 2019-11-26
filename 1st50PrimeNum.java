@@ -28,7 +28,7 @@ class PrimeNumber {
         else System.out.print(number + " ");
     }
     // Check if the next number is prime
-    number++;
+    number = (number == 2) ? 3 : number+2; // unless it was 2. so
     }
   }
 }
