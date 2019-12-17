@@ -32,3 +32,26 @@ class PrimeNumber {
     }
   }
 }
+
+# seive of eratosthenes --------------------------------------------------------------->>
+#include <iostream>
+//seive of eratosthenes
+const int size = 1000000;
+int status[size+5]; // 0=prime && 1=non-prime;
+void seive () {
+        status[0] = status[1] = 1;
+        for (int i = 4; i <= size; i += 2) {status[i] = 1;}
+        for (int i = 3; i*i <= size; i += 2) {
+                if (status[i] == 0) {
+                        for (int j = i*i; j <= size; j += 2*i) {status[j] = 1;}
+                }
+        }
+}
+int main () {
+        seive();
+        for (int i = 0; i <= 100; i++) {
+                if (status[i] == 0) printf("%d ", i);
+        }
+        printf("\n");
+        return 0;
+}
